@@ -9,9 +9,10 @@ import {
 import "../utils/firebase";
 import { useNavigate } from "react-router-dom";
 
-const Login = () => {
-  const navigate = useNavigate();
 
+const Login = () => {
+ 
+  const navigate = useNavigate();
   const [isSignIn, setIsSignIn] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
 
@@ -43,7 +44,7 @@ const Login = () => {
         passRef.current.value
       )
         .then(() => {
-          navigate("/browse");
+         navigate("/browse")
         })
         .catch((error) => {
           switch (error.code) {
@@ -64,7 +65,8 @@ const Login = () => {
         passRef.current.value
       )
         .then(() => {
-          navigate("/browse");
+          navigate("/browse")
+          
         })
         .catch((error) => {
           switch (error.code) {
