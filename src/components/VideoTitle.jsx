@@ -35,12 +35,12 @@ const VideoTitle = ({ movieId }) => {
     <div className="absolute inset-0 w-full h-full overflow-hidden">
       {movieKey && (
         <iframe
-          className="w-full h-full object-cover"
-          src={`https://www.youtube.com/embed/${movieKey}?autoplay=1&mute=1&controls=0&loop=1&playlist=${movieKey}&rel=0&modestbranding=1`}
+          className="w-full h-full object-cover pointer-events-none"
+          src={`https://www.youtube.com/embed/${movieKey}?autoplay=1&mute=1&controls=0&fs=0&loop=1&playlist=${movieKey}&rel=0&modestbranding=1&iv_load_policy=3`}
           title="Movie Trailer"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
+          allowFullScreen={false}
         />
       )}
     </div>

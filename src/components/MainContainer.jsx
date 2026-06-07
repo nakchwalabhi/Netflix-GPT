@@ -10,12 +10,11 @@ const MainContainer = () => {
     
     const {title, overview, id} = mainMovie;
   return (
-    <div className='relative w-full'>
-      <div className='relative w-full aspect-video overflow-hidden'>
+    <div className='w-full'>
+      <div className='relative w-full h-screen overflow-hidden'>
         <VideoTitle movieId={id}/>
         <VideoBackground title={title} overview={overview}/>
       </div>
-      {/* <SecondaryContainer/> */}
     </div>
   )
 }

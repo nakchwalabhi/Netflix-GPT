@@ -4,7 +4,7 @@ const MovieCard = ({posterPath}) => {
   if (!posterPath) return null
   
   return (
-    <div className='shrink-0 w-32 md:w-40 h-48 md:h-56 mx-2 cursor-pointer rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-110 hover:z-20 group'>
+    <div className='relative z-10 shrink-0 w-32 md:w-40 h-48 md:h-56 mx-1.5 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 transform-gpu will-change-transform hover:scale-105 hover:z-30 group'>
         <img 
           className='w-full h-full object-cover group-hover:brightness-110 transition-all duration-300' 
           src={CARD_IMG+posterPath}

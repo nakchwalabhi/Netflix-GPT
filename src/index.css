@@ -27,6 +27,16 @@ html {
   background: rgb(100, 100, 100);
 }
 
+/* Hide scrollbar while keeping scroll functionality */
+.scrollbar-hide {
+  
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 /* Smooth animations */
 @keyframes fadeIn {
   from {

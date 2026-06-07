@@ -1,9 +1,9 @@
 const VideoBackground = ({title, overview}) => {
     
   return (
-    <div className='absolute inset-0 z-10 pt-[20%] px-6 md:px-12 pb-20 flex flex-col justify-start w-full h-full'>
+    <div className='-mt-20 absolute inset-0 z-10 pt-[20%] px-6 md:px-12 pb-20 flex flex-col justify-start w-full h-full'>
       {/* Gradient overlay for better text readability */}
-      <div className='absolute inset-0 bg-linear-to-r from-black/80 via-black/50 to-transparent'></div>
+      <div className='absolute inset-0 pointer-events-none bg-linear-to-r from-black/80 via-black/50 to-transparent'></div>
       
       {/* Content wrapper */}
       <div className='relative z-20 flex flex-col justify-start max-w-2xl'>
